@@ -9,14 +9,28 @@
 <body>
 	<!-- series of buttons with descriptions -->
 	<div id="main" width="800" align="center" style="margin-left:15%;text-align:left">
-		<h3>Temp Title</h3>
-		<p>Introductory description</p>
+		<h3>Average Wind Speed of In and Out of Hurricane Season Storms</h3>
+		<p>Hurricane season spans the months of June, July, August, September, and November.</p>
 		<div id="canvas">
 			<svg width="800" height="400" style="border: 1px solid #777">
+				<g class="filter selected" value="non-hurr">
+					<rect height="20" width="145" rx="3" ry="3"/>
+					<text x="4" dy="1.3em">Non-Hurricane Month Wind</text>
+				</g>
+				<g class="filter" transform="translate(147)" value="hurr">
+					<rect height="20" width="120" rx="3" ry="3"/>
+					<text x="4" dy="1.3em">Hurricane Month Wind</text>
+				</g>
+				<g class="filter" transform="translate(269)" value="month">
+					<rect height="20" width="170" rx="3" ry="3"/>
+					<text x="4" dy="1.3em">Number of Storms out of Season</text>
+				</g>
 			</svg>
 		<div>
 		<!-- this description should change as visulaizations change -->
-		<p id="viz_descriptions">Desc</p>
+		<p id="viz_descriptions">While the average wind of the stroms do not noticeably differ, it is clear that the number of storms occuring outside the traditional hurricane season is increasing.
+			 This could be caused by climate change. 
+		</p>
 	</div>
 </body>
 <script src="http://d3js.org/d3.v5.min.js"></script>
