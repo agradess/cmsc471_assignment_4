@@ -214,7 +214,7 @@ function updateChart(key) {
 		svg.selectAll('.xaxis').call(d3.axisBottom(xScale).ticks(6).tickFormat(formatYear));
 		svg.selectAll('.yaxis').call(d3.axisLeft(yScale).ticks(6).tickFormat(formatWind));
 
-		svg.selectAll('.xlabel').text("year");
+		svg.selectAll('.xlabel').text("Year");
 		svg.selectAll('.ylabel').text("Avg wind speed");
 
 		
@@ -236,7 +236,7 @@ function updateChart(key) {
 		svg.selectAll('.xaxis').call(d3.axisBottom(xScale).ticks(6).tickFormat(formatYear));
 		svg.selectAll('.yaxis').call(d3.axisLeft(monthYscale).ticks(4));
 
-		svg.selectAll('.xlabel').text("year");
+		svg.selectAll('.xlabel').text("Year");
 		svg.selectAll('.ylabel').text("Number of out of season storms");
 
 
